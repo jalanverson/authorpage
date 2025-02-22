@@ -1,11 +1,36 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import jackImage from "../images/jack-verson.webp"
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<div class="flex justify-center">
+		<h1 class="text-4xl mt-[64px]">Jack Verson - Profile</h1>
+	</div>
+	<div class="grid grid-cols-12 gap-4 container mx-auto justify-center my-[64px] items-start px-[20px]">
+		<div class="flex col-start-1 col-span-12 md:col-span-4 justify-left">
+			<Image src={jackImage} alt="SweetPad rental soultions" class="rounded-[20px]" />
+		</div>
+		<div class="grid w-full items-start col-start-1 md:col-start-6 col-span-12 md:col-span-7">
+			<p class="text-lg my-[12px]">
+			  Jack Verson is the author of three books in the science fiction genre. Jack, with education in physics and computer science, had a long career in the computer industry. Starting in software, he worked for several years in the 1980’s as a computer game designer and publisher (Atari 400/800 computers), and finally as head of his own software company. The imagination required to conceive of and to write one’s own game titles and the inventiveness to start and run a successful software company are both qualities beneficial to an innovative science fiction book author. The physics background doesn’t hurt.
+			</p>
+			<p class="text-lg my-[12px]">
+				Only after retirement at the age of 70 did he start his first book. Ideas had been gelling for years. Retirement gave him the time. His books have a quality derived from experience and the fun of being written without stress. Advantages of age. Some might say that youth is an advantage for a science fiction writer. That may be so, but he no longer has the option of promoting his books that way, so age it is.​
+			</p>
+			<p class="text-lg my-[12px]">
+				Jack has currently finished three books. The first two, Prism and Trek, are part of a series about settling extraterrestrial worlds.
+			</p>
+			<p class="text-lg my-[12px]">
+				These are books based on other worlds that present problems to solve, small adventures with twists where logic is useful. Solutions that an astute reader could solve. Perhaps a very astute reader.
+			</p>
+			<p class="text-lg my-[12px]">
+				The third, The Guidance, to be published in April, 2025, is a statement about social development on many planets, with pros and cons that could be relevant to life here on Earth. Science fiction can be used to deliver many different messages.
+			</p>
+		</div>
+	</div>
 </Layout>
