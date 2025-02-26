@@ -1,0 +1,42 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import guidanceImage from "../../images/guidanceBook.webp"
+---
+
+<Layout>
+	<div class="flex bg-[#f5f8ff]">
+		<div class="grid grid-cols-12 gap-4 container mx-auto justify-center my-[64px] items-center px-[20px]">
+			<div class="grid col-start-1 col-span-12 justify-center">
+			  <h1 class="text-6xl">The Guidance</h1>
+			</div>
+		</div>
+	</div>
+	<div class="container mx-auto justify-left my-[64px] items-start px-[20px]">
+		<div class="float-left pr-[24px] pb-[24px]">
+			<Image src={guidanceImage} alt="Trek" class="rounded-[20px] max-h-[400px] w-auto" />
+		</div>
+		<p class="w-full text-lg my-[12px]">
+			The Guidance is a science fiction book with a message, at least a message the author wants to deliver. Imagine the forces of the universe. How do you envision these forces? What do you think are their abilities? Where do you feel they are steering creation? And why are they doing whatever it is that they are doing? Are you even the type of person who would admit to having these thoughts?
+		</p>
+		<p class="text-lg my-[12px]">
+			If so and no matter what you may think or feel, do you ever consider that what you believe to be true cannot be? That there are no thoughts a human mind can conjure to accurately describe the supernatural? That such thoughts are beyond description? There is much in the physical world that cannot yet be described. An unquestionable explanation of quantum physics? Not there yet. A unifying theory of the universe? No. So why should one feel that the supernatural can be described unequivocally?
+		</p>
+		<p class="text-lg my-[12px]">
+			If whatever you believe cannot be completely accurate, if it is beyond any of us to fully comprehend what forces may be out there, at least we can hope that they are benevolent. We can envision forces that are trying to guide us, us on this world in this universe and us on all worlds in all universes. Forces that try to keep watch over creation everywhere. There are a lot of worlds in the universe, perhaps a lot of universes, and life on all those need some care, need some help to make sure they are content and possibly happy.
+		</p>
+		<p class="text-lg my-[12px]">
+			Assume there is a guidance somewhere. Assume it is a benevolent guardian doing its best, but one that now needs help. A guidance over all existence is having its abilities stretched. It knows it will need help, perhaps not now but perhaps in millions of years. And it has the ability to get that help, but not with certainty. It needs to create a world and a people that will develop nearly perfect traits to be able to evolve into what the Guidance needs.
+		</p>
+		<p class="text-lg my-[12px]">
+			If you were such a supernatural power, how would you create a world and a people on it? What qualities would you give them? How would you hope they would develop? What would you like to see as the end result of your attempt at creation? Do you even know what that is? In the creation process, you can plant direction in the spirits of the people. You can instill desires or lack thereof for any number of intangible qualities. You can provide tangible gifts to aid in their development. But there is one rule that even the supernatural must adhere to. You can exert influence over your creation at the start. That is all. Once the seeds of life are placed in motion, your control is over. Like a stone skipped on the water. You have complete control until the stone is released. After that, none.
+		</p>
+		<p class="text-lg my-[12px]">
+			Any quality or gift you bestow has benefits. Any quality or gift can also provide impetus in an unconceived direction. None of this is necessarily bad or good. It is just that the end result has to be almost perfect. It’s amazing how subtle the effects of a decision may be. Even the overriding forces of creation have limitations in their ability and in their foresight. They can only hope to find the right combination; the subtle mix of life’s forces that will evolve into the help they need.
+		</p>
+		<div class="flex w-full justify-center items-start">
+		    <span class="text-black uppercase hover:text-black rounded-[10px] bg-[#dee948] px-[16px] py-[8px] mt-[24px]">coming soon April 2025</span>
+		</div>
+	</div>
+	
+</Layout>

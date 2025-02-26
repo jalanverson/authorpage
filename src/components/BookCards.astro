@@ -1,0 +1,58 @@
+---
+import { Image } from 'astro:assets';
+import prismCover from "../images/prismCover.webp"
+import trekCover from "../images/trekCover.webp"
+import guidanceCover from "../images/guidanceCover.webp"
+const { showSubtitle } = Astro.props;
+---
+<div class="flex flex-wrap container mx-auto justify-center my-[64px] items-start px-[20px]">
+  {(showSubtitle) && 
+    <div class="flex w-full justify-center">
+      <h2 class="text-5xl mb-[48px]">Books</h2>
+    </div>
+  }
+  <div class="flex items-stretch justify-center">
+    <div class="flex flex-wrap w-[30%] rounded-[20px] bg-[#d3e3fd] p-[20px] mr-[3%]">
+      <div class="flex w-full mb-[24px]">
+        <Image src={prismCover} alt="Prism" class="rounded-[20px] max-h-[400px] w-auto" />
+      </div>
+      <div class="flex flex-wrap w-full">
+        <p class="flex w-full text-lg">
+          Prism is the first book in a series about various planets settled from Earth. Each presents a unique problem based on the planet's biosphere that is impacting the ability of humanity to continue living there. Investigators are sent to try to help.
+        </p>
+        <div class="flex w-full justify-center items-start">
+          <a href="/books/prism" class="text-white hover:text-black bg-blue-700 hover:bg-green-300 rounded-[24px] px-[16px] py-[8px] mt-[24px]">Read more</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="flex flex-wrap w-[30%] rounded-[20px] bg-[#d3e3fd] p-[20px] mr-[3%]">
+      <div class="flex w-full mb-[24px]">
+        <Image src={trekCover} alt="Trek" class="rounded-[20px] max-h-[400px] w-auto" />
+      </div>
+      <div class="flex flex-wrap w-full">
+        <p class="flex w-full text-lg">
+          Trek is the second book in a series about various planets settled from Earth. Each presents a problem based on the planet's unique biosphere that is impacting humanity’s life on the planet.
+        </p>
+        <div class="flex w-full justify-center items-start">
+          <a href="/books/trek" class="text-white hover:text-black bg-blue-700 hover:bg-green-300 rounded-[24px] px-[16px] py-[8px] mt-[24px]">Read more</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="flex flex-wrap w-[30%] rounded-[20px] bg-[#d3e3fd] p-[20px]">
+      <div class="flex w-full mb-[24px]">
+        <Image src={guidanceCover} alt="The Guidance" class="rounded-[20px] max-h-[400px] w-auto" />
+      </div>
+      <div class="flex flex-wrap w-full">
+        <p class="flex w-full text-lg">
+          The Guidance is a science fiction book with a message, at least a message the author wants to deliver. Imagine the forces of the universe. How do you envision these forces? What do you think are their abilities?
+        </p>
+        <div class="flex w-full justify-center items-start">
+          <a href="/books/the-guidance" class="text-white hover:text-black bg-blue-700 hover:bg-green-300 rounded-[24px] px-[16px] py-[8px] mt-[24px]">Read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>

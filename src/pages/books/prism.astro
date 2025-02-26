@@ -1,0 +1,36 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import prismImage from "../../images/prismBook.webp"
+---
+
+<Layout>
+	<div class="flex bg-[#f5f8ff]">
+		<div class="grid grid-cols-12 gap-4 container mx-auto justify-center my-[64px] items-center px-[20px]">
+			<div class="grid col-start-1 col-span-12 justify-center">
+			  <h1 class="text-6xl">Prism</h1>
+			</div>
+		</div>
+	</div>
+	<div class="container mx-auto justify-left my-[64px] items-start px-[20px]">
+		<div class="float-left pr-[24px] pb-[24px]">
+			<Image src={prismImage} alt="Trek" class="rounded-[20px] max-h-[400px] w-auto" />
+		</div>
+		<p class="w-full text-lg my-[12px]">
+			Prism is the first book in a series about various planets settled from Earth. Each presents a unique problem based on the planet's biosphere that is impacting the ability of humanity to continue living there. Investigators are sent to try to help. Finding out what the issue is turns out to be the real problem. All believe a solution will be simple once that is found.
+		</p>
+		<p class="text-lg my-[12px]">
+			Prism is a planet that displays, actually thrives on colors. Colors of everything on the planet vacillate. The planet, the plants, and the native life. Their meanings are significant. Local Prism life speaks by modulating light emissions. It's like we speak with sound, but they use light. Why not? They have no ability for speech or hearing as we define it, but communicate quite well in their own way. This presents a major roadblock for the people sent from Earth to investigate what's happening. How can they break the code of a planet with this quirk? Luckily there are some friendly indigenous life forms that are willing to help.
+		</p>
+		<p class="text-lg my-[12px]">
+			You are the person tasked to solve the problem of Prism. What can you look for? Can there be meaning in colors used by your friendly local life? More than that, can there be meaning in colors of the spray of a wave breaking on the beach? Can there be meaning in how the sunlight reflects over a field of flowers? Would you even consider looking for meaning in such random occurrences? Have you considered looking on Earth? Probably not, but you are not on Earth.
+		</p>
+		<p class="text-lg my-[12px]">
+			The book describes how humanity adapts to life on Prism and how Prism life adapts to humanity. Not perfect, but not all bad. One problem remains for them to be able to live together as friends. People from Earth and some interesting life forms on Prism appear to join forces to solve this problem. It’s likely that the Prism life knows what the problem is and what to do, but have no way to tell anyone.
+		</p>
+		<div class="flex w-full justify-center items-start">
+		    <a href="https://www.amazon.com/Prism-Jack-Verson/dp/B0CHL7WRTG/ref=sr_1_1?crid=FDWT07KU2ADO&dib=eyJ2IjoiMSJ9.uzax6MahQ2lGVXxQGjjbJiWUSyPxys_KHqm-wT6SlJg.R_X2qmmLykZmmyfKuXVWa3AgQ_gTffpbv4E6zkYzOK4&dib_tag=se&keywords=jack+verson&qid=1738650470&sprefix=jack+vers%2Caps%2C214&sr=8-1" target="_blank" class="text-white hover:text-black bg-blue-700 hover:bg-green-300 rounded-[24px] px-[16px] py-[8px] mt-[24px]">Available on Amazon/Kindle</a>
+		</div>
+	</div>
+	
+</Layout>

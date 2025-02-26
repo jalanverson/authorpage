@@ -1,20 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { Image } from 'astro:assets';
-import jackImage from "../images/jack-verson.webp"
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import BookCards from "../components/BookCards.astro";
 ---
 
 <Layout>
 	<div class="flex bg-[#f5f8ff]">
 		<div class="grid grid-cols-12 gap-4 container mx-auto justify-center my-[64px] items-center px-[20px]">
-			<div class="grid col-start-1 col-span-12 md:col-span-6 justify-center">
-			<h1 class="text-4xl mt-[64px]">Jack Verson - Profile</h1>
-			</div>
-			<div class="flex justify-center col-start-1 md:col-start-7 col-span-12 md:col-span-6">
-			<Image src={jackImage} alt="Jack Verson" class="rounded-[20px] max-h-[400px] w-auto" />
+			<div class="grid col-start-1 col-span-12 justify-center">
+			  <h1 class="text-6xl">Jack Verson - Profile</h1>
 			</div>
 		</div>
 	</div>
@@ -35,4 +28,5 @@ import jackImage from "../images/jack-verson.webp"
 			The third, The Guidance, to be published in April, 2025, is a statement about social development on many planets, with pros and cons that could be relevant to life here on Earth. Science fiction can be used to deliver many different messages.
 		</p>
 	</div>
+	<BookCards showSubtitle={true} />
 </Layout>
