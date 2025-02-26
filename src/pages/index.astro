@@ -5,7 +5,13 @@ import { Image } from 'astro:assets';
 import jackTurtle from "../images/jack-turtle.jpg"
 ---
 
-<Layout>
+<Layout
+	seo={{
+		title: "Jack Verson - Author",
+		description: "Jack Verson is the author of three books in the science fiction genre. Jack, with education in physics and computer science, had a long career in the computer industry.",
+		canonical: "https://jackverson.com/",
+	}}
+>
 	<div class="flex bg-[#f5f8ff]">
 		<div class="grid grid-cols-12 gap-4 container mx-auto justify-center my-[64px] items-center px-[20px]">
 			<div class="grid col-start-1 col-span-12 md:col-span-6 justify-center">

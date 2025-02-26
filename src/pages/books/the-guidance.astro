@@ -4,7 +4,13 @@ import { Image } from 'astro:assets';
 import guidanceImage from "../../images/guidanceBook.webp"
 ---
 
-<Layout>
+<Layout
+	seo={{
+		title: "The Guidance - By Jack Verson",
+		description: "The Guidance is a science fiction book with a message, at least a message the author wants to deliver. Imagine the forces of the universe. How do you envision these forces?",
+		canonical: "https://jackverson.com/books/the-guidance",
+	}}
+>
 	<div class="flex bg-[#f5f8ff]">
 		<div class="grid grid-cols-12 gap-4 container mx-auto justify-center my-[64px] items-center px-[20px]">
 			<div class="grid col-start-1 col-span-12 justify-center">

@@ -4,7 +4,13 @@ import { Image } from 'astro:assets';
 import prismImage from "../../images/prismBook.webp"
 ---
 
-<Layout>
+<Layout
+	seo={{
+		title: "Prism - By Jack Verson",
+		description: "Prism is the first book in a series about various planets settled from Earth. Each presents a unique problem based on the planet's biosphere that is impacting the ability of humanity to continue living there.",
+		canonical: "https://jackverson.com/books/prism",
+	}}
+>
 	<div class="flex bg-[#f5f8ff]">
 		<div class="grid grid-cols-12 gap-4 container mx-auto justify-center my-[64px] items-center px-[20px]">
 			<div class="grid col-start-1 col-span-12 justify-center">

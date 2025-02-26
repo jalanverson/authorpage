@@ -3,7 +3,13 @@ import Layout from '../../layouts/Layout.astro';
 import BookCards from "../../components/BookCards.astro";
 ---
 
-<Layout>
+<Layout
+	seo={{
+		title: "Books by Jack Verson",
+		description: "Jack Verson is the author of three books in the science fiction genre. Jack, with education in physics and computer science, had a long career in the computer industry.",
+		canonical: "https://jackverson.com/books",
+	}}
+>
 	<div class="flex bg-[#f5f8ff]">
 		<div class="grid grid-cols-12 gap-4 container mx-auto justify-center my-[64px] items-center px-[20px]">
 			<div class="grid col-start-1 col-span-12 justify-center">
