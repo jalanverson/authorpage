@@ -11,8 +11,8 @@ const { showSubtitle } = Astro.props;
       <h2 class="text-5xl mb-[48px]">Books</h2>
     </div>
   }
-  <div class="flex items-stretch justify-center">
-    <div class="flex flex-wrap w-[30%] rounded-[20px] bg-[#d3e3fd] p-[20px] mr-[3%]">
+  <div class="flex flex-wrap md:flex-nowrap items-stretch justify-center">
+    <div class="flex flex-wrap w-full md:w-[30%] rounded-[20px] bg-[#d3e3fd] p-[20px] md:mr-[3%] mb-[24px] md:mb-0">
       <div class="flex w-full mb-[24px]">
         <Image src={prismCover} alt="Prism" class="rounded-[20px] max-h-[400px] w-auto" />
       </div>
@@ -26,7 +26,7 @@ const { showSubtitle } = Astro.props;
       </div>
     </div>
   
-    <div class="flex flex-wrap w-[30%] rounded-[20px] bg-[#d3e3fd] p-[20px] mr-[3%]">
+    <div class="flex flex-wrap w-full md:w-[30%] rounded-[20px] bg-[#d3e3fd] p-[20px] md:mr-[3%] mb-[24px] md:mb-0">
       <div class="flex w-full mb-[24px]">
         <Image src={trekCover} alt="Trek" class="rounded-[20px] max-h-[400px] w-auto" />
       </div>
@@ -40,7 +40,7 @@ const { showSubtitle } = Astro.props;
       </div>
     </div>
   
-    <div class="flex flex-wrap w-[30%] rounded-[20px] bg-[#d3e3fd] p-[20px]">
+    <div class="flex flex-wrap w-full md:w-[30%] rounded-[20px] bg-[#d3e3fd] p-[20px]">
       <div class="flex w-full mb-[24px]">
         <Image src={guidanceCover} alt="The Guidance" class="rounded-[20px] max-h-[400px] w-auto" />
       </div>

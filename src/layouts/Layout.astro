@@ -2,6 +2,14 @@
 import "../styles/global.css";
 import TopNavigation from "../components/TopNavigation.astro";
 import Footer from "../components/Footer.astro";
+import socialImageDeafult from "../images/social-image-default.png"
+import { SEO, type Props as SEOProps } from "astro-seo";
+
+export interface Props {
+  seo?: SEOProps;
+}
+
+const { seo } = Astro.props;
 ---
 
 <!doctype html>
@@ -11,7 +19,31 @@ import Footer from "../components/Footer.astro";
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<SEO 
+      {...seo} 
+      title={seo?.title ?? "Jack Verson - Author"} 
+      description={seo?.description}
+      canonical={seo?.canonical}
+      extend={{
+        // extending the default link tags
+        link: [{ rel: "icon", href: "/favicon.ico" }],
+        // extending the default meta tags
+        meta: [
+          {
+            name: "og:image",
+            content:
+            `https://jackverson.com${socialImageDeafult.src}`,
+          },
+          { name: "og:title", content: seo?.title },
+          { name: "og:description", content: seo?.description },
+          { name: "og:image:width", content: "630" },
+          { name: "og:image:height", content: "1200" },
+          { name: "og:type", content: "website" },
+          { name: "og:site_name", content: "JackVerson.com" },
+          { name: "og:locale", content: "en_US" },
+        ],
+      }}
+      />
 	</head>
 	<body>
 		<TopNavigation />

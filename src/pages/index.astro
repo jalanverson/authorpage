@@ -1,13 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import BookCards from "../components/BookCards.astro";
+import { Image } from 'astro:assets';
+import jackTurtle from "../images/jack-turtle.jpg"
 ---
 
 <Layout>
 	<div class="flex bg-[#f5f8ff]">
 		<div class="grid grid-cols-12 gap-4 container mx-auto justify-center my-[64px] items-center px-[20px]">
-			<div class="grid col-start-1 col-span-12 justify-center">
-			  <h1 class="text-6xl">Jack Verson - Profile</h1>
+			<div class="grid col-start-1 col-span-12 md:col-span-6 justify-center">
+			  <h1 class="text-5xl">Jack Verson - Profile</h1>
+			</div>
+			<div class="flex flex-wrap justify-center items-start col-start-1 md:col-start-7 col-span-12 md:col-span-6">
+			  <Image src={jackTurtle} alt="Jack Verson" class="rounded-[20px] border-solid border-black border-[1px]" />
+			  <span class="flex">Picture not an exact likeness of the author</span>
 			</div>
 		</div>
 	</div>
